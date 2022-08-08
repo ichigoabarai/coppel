@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Buscar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <ul>
+        {% for col in resultado %}
+              <li>
+                    <label for="id">{{ col.id }}</label><br />
+                    <label for="title">{{ col.title }}</label><br />
+                    <label for="image">{{ col.image }}</label><br />
+                    <label for="onsaleDate">{{ col.onsaleDate }}</label><br />
+              </li><br /><br />
+          {% endfor %}
+  </body>
+</html>

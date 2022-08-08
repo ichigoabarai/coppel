@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Buscar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <form action="/searchComics" method="POST">
+      <p>Seleeciona que quieres buscar</p>
+      <input
+        type="radio"
+        id="personaje"
+        name="categoria"
+        value="personaje"
+        checked
+      />
+      <label for="personaje">Personaje</label><br />
+      <input type="radio" id="comic" name="categoria" value="comic" />
+      <label for="comic">Comic</label><br /><br />
+      <label for="nombre">Buscar por nombre</label><br /><br />
+      <input type="text" id="nombre" name="nombre" /><br /><br />
+      <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+  </body>
+</html>

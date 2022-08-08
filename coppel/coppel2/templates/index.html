@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Buscar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <form action="/users" method="POST">
+      <p>REGISTRARSE</p>
+      <label for="usuariono">{{name}}</label><br />
+      <label for="usuario">usuario</label><br />
+      <input type="text" id="usuario" name="usuario" /><br /><br />
+      <label for="password">password</label><br />
+      <input type="password" id="password" name="password" /><br /><br />
+      <label for="nombre">nombre</label><br />
+      <input type="text" id="nombre" name="nombre" /><br /><br />
+      <label for="edad">edad</label><br />
+      <input type="text" id="edad" name="edad" /><br /><br />
+      <button type="submit" class="btn btn-primary">Registrase</button>
+    </form>
+    <br /><br />
+    <form action="/users" method="POST">
+      <p>INGRESAR</p>
+      <label for="loginno">{{loginno}}</label><br />
+      <label for="usuario">Usuario</label><br />
+      <input type="text" id="usuario" name="usuario" /><br /><br />
+      <label for="password">password</label><br />
+      <input type="text" id="password" name="password" /><br /><br />
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+  </body>
+</html>

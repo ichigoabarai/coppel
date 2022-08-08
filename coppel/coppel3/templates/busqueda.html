@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Buscar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <ul>
+        {% for col in resultado %}
+              <li>
+                <form action="/busqueda" method="POST">
+                    <label for="id">{{ col.id }}</label><br />
+                    <input type="hidden" id="id" name="id" value={{ col.id }} />
+                    <label for="title">{{ col.title }}</label><br />
+                    <input type="hidden" id="title" name="title" value={{ col.title }} />
+                    <label for="image">{{ col.image }}</label><br />
+                    <input type="hidden" id="image" name="image" value={{ col.image }} />
+                    <label for="onsaleDate">{{ col.onsaleDate }}</label><br />
+                    <input type="hidden" id="onsaleDate" name="onsaleDate" value={{ col.onsaleDate }} />
+                    <input type="hidden" id="token" name="token" value={{ resultado.0.token }} /><br />
+                    <button type="submit" class="btn btn-primary">Añadir</button>
+                  </form>
+              </li><br /><br />
+          {% endfor %}
+  </body>
+</html>
